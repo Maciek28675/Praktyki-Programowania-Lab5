@@ -1,69 +1,71 @@
 """This module implements Calculator class"""
 
+
 class Calculator:
     """
-        This class is used to group simmilar math operations.
+    This class is used to group simmilar math operations.
     """
+
     def __init__(self):
         pass
 
     @staticmethod
     def add(a: int, b: int) -> int:
         """
-            Caluclates sum of 2 given numbers.
+        Caluclates sum of 2 given numbers.
 
-            Args:
-                a (int): First number.
-                b (int): Second number.
+        Args:
+            a (int): First number.
+            b (int): Second number.
 
-            Returns:
-                sum of a and b.
+        Returns:
+            sum of a and b.
         """
 
-        return a+ b
+        return a + b
 
     @staticmethod
-    def subtract ( a: int , b: int) -> int:
+    def subtract(a: int, b: int) -> int:
         """
-            Caluclates difference of 2 given numbers.
+        Caluclates difference of 2 given numbers.
 
-            Args:
-                a (int): First number.
-                b (int): Second number.
+        Args:
+            a (int): First number.
+            b (int): Second number.
 
-            Returns:
-                difference of a and b.
+        Returns:
+            difference of a and b.
         """
         return a - b
 
     @staticmethod
-    def multiply ( a: int , b: int) -> int:
+    def multiply(a: int, b: int) -> int:
         """
-            Caluclates product of 2 given numbers.
+        Caluclates product of 2 given numbers.
 
-            Args:
-                a (int): First number.
-                b (int): Second number.
+        Args:
+            a (int): First number.
+            b (int): Second number.
 
-            Returns:
-                product of a and b.
+        Returns:
+            product of a and b.
         """
         return a * b
 
     @staticmethod
-    def divide ( a: int , b: int) -> float :
+    def divide(a: int, b: int) -> float:
         """
-            Caluclates quotient of 2 given numbers.
+        Caluclates quotient of 2 given numbers.
 
-            Args:
-                a (int): First number.
-                b (int): Second number.
+        Args:
+            a (int): First number.
+            b (int): Second number.
 
-            Returns:
-                quotient of a and b.
+        Returns:
+            quotient of a and b.
         """
         try:
             return a / b
         except ZeroDivisionError:
             print("Error: division by zero is forbidden!")
-            return float('NaN')
+            return float("NaN")
