@@ -1,8 +1,8 @@
-"""
-"""
+"""This module implements Calculator class"""
 
 class Calculator:
     """
+        This class is used to group simmilar math operations.
     """
     def __init__(self):
         pass
